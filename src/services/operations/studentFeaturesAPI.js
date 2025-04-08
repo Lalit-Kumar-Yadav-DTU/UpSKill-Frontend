@@ -41,11 +41,11 @@ export async function BuyCourse(
     const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js")
 
     if (!res) {
-      toast.error(
-        "Razorpay SDK failed to load. Check your Internet Connection."
-      )
+      toast.error("Razorpay SDK failed to load. Check your Internet Connection.")
+      toast.dismiss(toastId)
       return
     }
+    
 
     // Initiating the Order in Backend
     const orderResponse = await apiConnector(
