@@ -28,9 +28,12 @@ app.use(
     })
 );
 app.use(
-    fileUpload({
-        useTempFiles: true,
-        tempFileDir: '/tmp'
+    cors({
+      origin: [
+        "http://localhost:3000",
+        "https://upskill-frontend-exu8.onrender.com"
+      ],
+      credentials: true
     })
 );
 
