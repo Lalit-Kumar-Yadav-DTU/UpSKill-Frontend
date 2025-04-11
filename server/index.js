@@ -22,19 +22,10 @@ const contactUsRoute = require('./routes/Contact');
 app.use(express.json()); 
 app.use(cookieParser());
 app.use(
-    cors({
-        origin: 'https://ed-tech-platform-frontend.onrender.com',
-        credentials: true
-    })
-);
-app.use(
-    cors({
-      origin: [
-        "http://localhost:3000",
-        "https://upskill-frontend-exu8.onrender.com"
-      ],
-      credentials: true
-    })
+  cors({
+    origin: ["http://localhost:3000"],
+    credentials: true
+  })
 );
 
 // connections
@@ -50,14 +41,14 @@ app.use("/api/v1/reach", contactUsRoute);
 
 // default route
 app.get('/', (req, res) => {
-    res.send(`<div>
+  res.send(`<div>
     This is Default Route  
     <p>Everything is OK</p>
-    </div>`);
+  </div>`);
 });
 
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
-    console.log(`Server Started on PORT ${PORT}`);
+  console.log(`Server Started on PORT ${PORT}`);
 });
