@@ -18,14 +18,18 @@ const paymentRoutes = require('./routes/Payments');
 const courseRoutes = require('./routes/Course');
 const contactUsRoute = require('./routes/Contact');
 
-// middleware 
+// middlewar
 app.use(express.json()); 
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
-    credentials: true
-  })
+  origin: [
+    "http://localhost:3000",
+    "https://upskill-frontend-exu8.onrender.com"
+  ],
+  credentials: true
+})
+
 );
 
 // connections
