@@ -1,4 +1,34 @@
-<<<<<<< HEAD
+
+# UpSkill-EdTech
+
+Full Stack EdTech platform built with the MERN stack  
+TailwindCSS is used for styling.
+
+---
+
+## 🔧 Usage
+
+To run this web app locally:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Lalit-Kumar-Yadav-DTU/UpSKill-Frontend.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <<<<<<< HEAD
 # StudyNotion Edtech Project
 =======
 # StudyNotion-EdTech
@@ -26,4 +56,4 @@ Open the project in your browser at http://localhost:3000 to view your project.
 -Build this project in Love Babbar's Dot Batch.
 
 Contributing
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request. -->

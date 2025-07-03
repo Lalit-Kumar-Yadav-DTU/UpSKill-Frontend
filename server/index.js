@@ -25,6 +25,7 @@ app.use(
   cors({
   origin: [
     "http://localhost:3000",
+    "https://lalit-upskill.netlify.app",
     "https://upskill-frontend-exu8.onrender.com"
   ],
   credentials: true
